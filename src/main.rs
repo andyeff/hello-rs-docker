@@ -7,7 +7,7 @@ async fn index(web::Path((id, name)): web::Path<(u32, String)>) -> impl Responde
 
 #[get("/")]
 async fn root() -> impl Responder {
-    format!("ooh you found the root page id")
+    format!("Hello! This is the root page")
 }
 
 #[actix_web::main]
